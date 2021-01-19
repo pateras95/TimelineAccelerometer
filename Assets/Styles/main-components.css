@@ -64,7 +64,7 @@
     border-radius: 50%;
     background: #677A86;
     animation: breathe 2s linear infinite;
-    z-index: 1;
+    z-index: 2;
 }
 
 @keyframes breathe {

@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./Assets/Styles/main-components.css">
         <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
         <script>
             let x;
@@ -101,82 +102,24 @@
                 transform: translateY(-50%);
             }
 
-            .child {
-                width: 200px;
-                height: 80px;
-                margin-right: 30px;
-                padding: 25px;
-                box-sizing: border-box;
-                background: #3b3b3b;
-                display: inline-block;
-                /* position: absolute; */
-            }
 
-            .arrow {
-                height: 100px;
-                border-left: 1px solid #072736;
+            .potition-arrow-1 {
                 top: 450px;
                 left: 4369px;
-                position: absolute;
-                z-index: 1;
-                white-space: normal;
             }
 
-            .child3 {
-                width: 350px;
-                height: 350px;
-                margin-right: 30px;
-                padding: 25px;
-                box-sizing: border-box;
-                background: white;
-                border: 1px solid black;
-                color: black;
-                font-size: 15px;
-                text-align: center;
-                border-radius: 5px;
-                display: inline-block;
+            .potition-child-1 {
                 top: 100px;
                 left: 4190px;
-                z-index: 2;
-                position: absolute;
-                white-space: normal;
             }
-            
-            .year{
-                color: #072736;
-                text-align: center;
-                font-size: 25px;
-                background-color:#EEE8AA;
-                font-family: 'Courier New', Courier, monospace;
-                font-weight: 700;
-                padding: 5px;
-                width: 150px;
+
+            .potition-year-1 {
                 top: 580px;
                 left: 4300px;
-                position: absolute;
-                border: 1px solid#072736;
             }
 
-            .node {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: #1685b8;
-                box-sizing: border-box;
-                top: 50%;
+            .potition-node-1 {
                 left: 4350px;
-                transform: translateY(-50%);
-                position: absolute;
-                border-radius: 50%;
-                background: rgba(188, 237, 243);
-                animation: breathe 2s linear infinite;
-                z-index: 1;
-            }
-
-            @keyframes breathe {
-                60% {
-                    box-shadow: 0 0 0 8px rgba(120, 255, 0, 0.6)
-                }
             }
         </style>
     </head>
@@ -184,27 +127,13 @@
     <body onload="init()">
         <div class="container" id="flavoursContainer">
             <div class="timeline"></div>
-            <div class="child">Child #1</div>
-            <div class="child">Child #2</div>
-            <div class="child">Child #3</div>
-            <div class="child">Child #4</div>
-            <div class="child">Child #5</div>
-            <div class="child">Child #6</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child">Child #7</div>
-            <div class="child3">Την τέταρτη γενιά, που εμφανίζεται στις αρχές τις δεκαετίας του 70 και η οποία
+            <div class="child potition-child-1">Την τέταρτη γενιά, που εμφανίζεται στις αρχές τις δεκαετίας του 70 και η
+                οποία
                 χαρακτηρίζεται, από τη περαιτέρω τεχνολογική εξέλιξη, στον τομέα των ολοκληρωμένων κυκλωμάτων. Η εξέλιξη
                 αυτή οδήγησε στην κατασκευή των ολοκληρωμένων κυκλωμάτων υψηλής πυκνότητας (VLSI).</div>
-            <div class="arrow"></div>
-            <div class="node"></div>
-            <div class="year"> 1940 </div>
+            <div class="arrow potition-arrow-1"></div>
+            <div class="node potition-node-1"></div>
+            <div class="year potition-year-1"> 1940 </div>
         </div>
         <section>
             Accelerometer detected? <span id="acc"></span><br />

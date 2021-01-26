@@ -17,6 +17,13 @@
                 white-space: nowrap;
             }
             
+            .avatar {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                border: 3px solid #614959;
+            }
+            
             .potition-child-1 {
                 top: 100px;
                 left: 645px;
@@ -55,12 +62,35 @@
                 left: 1200px;
             }
             
+            .avatar-node-2 {
+                position: absolute;
+                left: 970px;
+                top: 550px;
+                z-index: 4;
+            }
+            
             #arrow-left {
                 -webkit-animation: arrow-jump-left 1s infinite;
                 -moz-animation: arrow-jump-left 1s infinite;
                 -o-animation: arrow-jump-left 1s infinite;
                 animation: arrow-jump-left 2s infinite;
                 width: 50px;
+            }
+            
+            .oval {
+                width: 154px;
+                height: 150px;
+                color: #111;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 90px;
+                float: left;
+                shape-outside: ellipse();
+            }
+            
+            span-test {
+                padding-top: 70px;
+                display: inline-block;
             }
             
             @-webkit-keyframes arrow-jump-left {
@@ -129,14 +159,17 @@
                 <div class="node potition-node-1"></div>
                 <div class="year potition-year-1">1940</div>
             </div>
+
             <div id="child_2">
-                <div class="child potition-child-2">
-                    Την τέταρτη γενιά, που εμφανίζεται στις αρχές τις δεκαετίας του 70 και η οποία χαρακτηρίζεται, από τη περαιτέρω τεχνολογική εξέλιξη, στον τομέα των ολοκληρωμένων κυκλωμάτων. Η εξέλιξη αυτή οδήγησε στην κατασκευή των ολοκληρωμένων κυκλωμάτων υψηλής πυκνότητας
-                    (VLSI).
-                </div>
+                <div class='oval'></div>
+                <span class="child potition-child-2">
+                    <div class="oval"><img src="./Assets/Images/1941.jpg" class="avatar" /></div>
+                    <h5>1941 ή Z3 του Konrad Zuse </h5>
+                    <p>Είναι ο πρώτος προγραμματισμένος υπολογιστής του κόσμου. Κατασκευάστηκε με 2200 ηλεκτρονόμους. Οι υπολογισμοί γίνονταν με δυαδική αρίθμηση κινητής υποδιαστολής. Η μηχανή αυτή καταστράφηκε στον βομβαρδισμό του Βερολίνου.</p>
+                </span>
                 <div class="arrow potition-arrow-2"></div>
                 <div class="node potition-node-2"></div>
-                <div class="year potition-year-2">1942</div>
+                <div class="year potition-year-2">1941</div>
             </div>
         </div>
         <section>

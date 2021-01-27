@@ -2,6 +2,13 @@
     background-color: #9BAEBC;
 }
 
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #614959;
+}
+
 .timeline {
     position: absolute;
     background-color: #072736;
@@ -125,4 +132,55 @@
 
 #acc.no {
     color: red;
+}
+
+#arrow-left {
+    -webkit-animation: arrow-jump-left 1s infinite;
+    -moz-animation: arrow-jump-left 1s infinite;
+    -o-animation: arrow-jump-left 1s infinite;
+    animation: arrow-jump-left 2s infinite;
+    width: 50px;
+}
+
+span-test {
+    padding-top: 70px;
+    display: inline-block;
+}
+
+@-webkit-keyframes arrow-jump-left {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -0-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+#arrow-right {
+    -webkit-animation: arrow-jump-right 1s infinite;
+    /* Safari 4+ */
+    -moz-animation: arrow-jump-right 1s infinite;
+    /* Fx 5+ */
+    -o-animation: arrow-jump-right 1s infinite;
+    /* Opera 12+ */
+    animation: arrow-jump-right 3s infinite;
+    /* IE 10+, Fx 29+ */
+    width: 50px;
+}
+
+@-webkit-keyframes arrow-jump-right {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(+10px);
+        -moz-transform: translateX(+10px);
+        -0-transform: translateX(+10px);
+        transform: translateX(+10px);
+    }
 }

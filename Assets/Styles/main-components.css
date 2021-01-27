@@ -39,8 +39,7 @@
     white-space: normal;
 }
 
-
-/* .video-child {
+.video-child {
     width: 570px;
     height: 350px;
     margin-right: 30px;
@@ -56,7 +55,18 @@
     z-index: 2;
     position: absolute;
     white-space: normal;
-} */
+}
+
+.oval {
+    width: 154px;
+    height: 150px;
+    color: #111;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 90px;
+    float: left;
+    shape-outside: ellipse();
+}
 
 .year {
     color: white;
@@ -69,17 +79,6 @@
     width: 150px;
     position: absolute;
     border: 1px solid#072736;
-}
-
-.oval {
-    width: 154px;
-    height: 150px;
-    color: #111;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 90px;
-    float: left;
-    shape-outside: ellipse();
 }
 
 .node {

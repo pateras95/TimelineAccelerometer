@@ -31,12 +31,12 @@ function init() {
     const flavoursContainer = document.getElementById("flavoursContainer");
     const flavoursScrollWidth = flavoursContainer.scrollWidth;
     self.setInterval(() => {
-        if ( flavoursContainer.scrollLeft !== flavoursScrollWidth && x < -6) {
+        if (flavoursContainer.scrollLeft !== flavoursScrollWidth && x < -6) {
             flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 20, 0);
         }
     }, 15);
     self.setInterval(() => {
-        if ( flavoursContainer.scrollRight !== flavoursScrollWidth && x > 6) {
+        if (flavoursContainer.scrollRight !== flavoursScrollWidth && x > 6) {
             flavoursContainer.scrollTo(flavoursContainer.scrollLeft - 20, 0);
         }
     }, 15);

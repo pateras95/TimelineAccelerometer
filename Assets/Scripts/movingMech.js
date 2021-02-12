@@ -32,12 +32,12 @@ function init() {
     const flavoursScrollWidth = flavoursContainer.scrollWidth;
     self.setInterval(() => {
         if (flavoursContainer.scrollLeft !== flavoursScrollWidth && x < -6) {
-            flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 20, 0);
+            flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 10, 0);
         }
     }, 15);
     self.setInterval(() => {
         if (flavoursContainer.scrollRight !== flavoursScrollWidth && x > 6) {
-            flavoursContainer.scrollTo(flavoursContainer.scrollLeft - 20, 0);
+            flavoursContainer.scrollTo(flavoursContainer.scrollLeft - 10, 0);
         }
     }, 15);
 }
